@@ -6,7 +6,7 @@ locals {
   idp_name             = "${local.idp_host} (business users)"
 }
 
-# Create the subaccount
+# Create a SAP BTP subaccount
 resource "btp_subaccount" "subaccount" {
   name                  = local.subaccount_name
   description           = local.subaccount_name
