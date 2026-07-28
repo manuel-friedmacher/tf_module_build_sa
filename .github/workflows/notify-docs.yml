@@ -10,10 +10,10 @@ jobs:
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.DOCS_DISPATCH_TOKEN }}   # PAT with repo scope on aggregator
-          repository: org/terraform-docs
+          repository: Friedmacher/tf_modules
           event-type: module-released
           client-payload: |
             {
-              "module": "vpc",
+              "module": "build_sa",
               "version": "${{ github.event.release.tag_name }}"
             }
