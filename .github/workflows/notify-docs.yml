@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch to aggregator repo
-        uses: peter-evans/repository-dispatch@v3
+        uses: step-security/repository-dispatch@v4
         with:
           token: ${{ secrets.DOCS_DISPATCH_TOKEN }}   # PAT with repo scope on aggregator
           repository: Friedmacher/tf_modules
