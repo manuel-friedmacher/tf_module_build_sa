@@ -1,0 +1,19 @@
+name: Trigger Docs Aggregator
+on:
+  release:
+    types: [published]
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch to aggregator repo
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.DOCS_DISPATCH_TOKEN }}   # PAT with repo scope on aggregator
+          repository: org/terraform-docs
+          event-type: module-released
+          client-payload: |
+            {
+              "module": "vpc",
+              "version": "${{ github.event.release.tag_name }}"
+            }
