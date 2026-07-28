@@ -8,12 +8,12 @@ on:
 jobs:
   terraform-docs:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - name: Generate terraform-docs
-        uses: terraform-docs/gh-actions@v1
-        with:
-          output-file: README.md
-          output-method: inject
-          git-push: true
-          git-commit-message: "docs: auto-update terraform-docs"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate terraform-docs
+      uses: terraform-docs/gh-actions@v1
+      with:
+        output-file: README.md
+        output-method: inject
+        git-push: true
+        git-commit-message: "docs: auto-update terraform-docs"
