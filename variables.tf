@@ -1,3 +1,4 @@
+# The name of the project the subaccount belongs to. It must be 1–40 characters and contain only letters, digits, spaces, hyphens, or underscores.
 variable "project_name" {
   description = "Name of the project the subaccount belongs to."
   type        = string
