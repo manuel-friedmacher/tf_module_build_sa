@@ -1,4 +1,4 @@
-# Versiosn constraints for Terraform and the BTP provider
+# Version constraints for Terraform and the BTP provider
 terraform {
   required_version = ">= 1.14.0"
 
