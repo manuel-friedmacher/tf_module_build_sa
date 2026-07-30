@@ -32,7 +32,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_btp_idp"></a> [btp\_idp](#input\_btp\_idp) | FQDN of the SAP Cloud Identity Services (IdP) to be trusted. | `string` | n/a | yes |
-| <a name="input_btp_platform_idp"></a> [btp\_platform\_idp](#input\_btp\_platform\_idp) | FQDN of the Platform Identity Provider. | `string` | n/a | yes |
+| <a name="input_btp_platform_idp"></a> [btp\_platform\_idp](#input\_btp\_platform\_idp) | FQDN of the SAP Cloud Identity Services which is used as Platform Identity Provider. | `string` | n/a | yes |
 | <a name="input_parent_id"></a> [parent\_id](#input\_parent\_id) | Parent ID for the subaccount. | `string` | n/a | yes |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name of the project the subaccount belongs to. | `string` | n/a | yes |
 | <a name="input_stage"></a> [stage](#input\_stage) | Stage of the subaccount to be created. | `string` | n/a | yes |
