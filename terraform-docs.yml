@@ -1,4 +1,6 @@
-formatter: markdown table
+formatter: pretty
+footer-from: "docs/footer.md"
+header-from: "docs/header.md"
 output:
   file: README.md
   mode: inject
