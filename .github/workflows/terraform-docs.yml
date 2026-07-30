@@ -19,3 +19,4 @@ jobs:
           config-file: .terraform-docs.yml
           git-push: true
           git-commit-message: "docs: auto-update terraform-docs"
+
