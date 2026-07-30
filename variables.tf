@@ -35,7 +35,7 @@ variable "parent_id" {
 }
 
 variable "btp_platform_idp" {
-  description = "FQDN of the Platform Identity Provider."
+  description = "FQDN of the SAP Cloud Identity Services which is used as Platform Identity Provider."
   type        = string
   validation {
     condition     = can(regex("^[a-zA-Z0-9.-]+$", var.btp_platform_idp))
